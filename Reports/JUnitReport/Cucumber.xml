@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="0.312" tests="1" skipped="0" failures="0" errors="0">
+<testcase classname="Swag Labs Login" name="Successful login with valid credentials" time="0.033">
+<system-out><![CDATA[
+Given the user is on the login page.........................................passed
+When the user enters valid username "user123" and valid password "password123".passed
+And the user clicks the login button........................................passed
+Then the user should be redirected to the dashboard.........................passed
+]]></system-out>
+</testcase>
+</testsuite>
