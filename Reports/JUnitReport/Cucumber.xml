@@ -1,11 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="0.312" tests="1" skipped="0" failures="0" errors="0">
-<testcase classname="Swag Labs Login" name="Successful login with valid credentials" time="0.033">
+<testsuite name="Cucumber" time="0.362" tests="4" skipped="0" failures="0" errors="0">
+<testcase classname="Swag Labs Login" name="Successful login with valid credentials" time="0.045">
 <system-out><![CDATA[
 Given the user is on the login page.........................................passed
-When the user enters valid username "user123" and valid password "password123".passed
+When the user enters valid username "standard_user" and valid password "secret_sauce".passed
 And the user clicks the login button........................................passed
 Then the user should be redirected to the dashboard.........................passed
+Then close browser..........................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Swag Labs Login" name="Successful login with valid credentials - Example #1.1" time="0.002">
+<system-out><![CDATA[
+Given the user is on the login page.........................................passed
+When the user enters valid username "standard_user" and valid password "secret_sauce".passed
+And the user clicks the login button........................................passed
+Then the user should be redirected to the dashboard.........................passed
+Then close browser..........................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Swag Labs Login" name="unsuccessful login with invalid credentials" time="0.003">
+<system-out><![CDATA[
+Given the user is on the login page.........................................passed
+When the user enters valid username "locked_out_user" and valid password "secret_sauce".passed
+And the user clicks the login button........................................passed
+Then the user should be displayed error message.............................passed
+Then close browser..........................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Swag Labs Login" name="unsuccessful login with invalid credentials - Example #1.1" time="0.004">
+<system-out><![CDATA[
+Given the user is on the login page.........................................passed
+When the user enters valid username "locked_out_user" and valid password "secret_sauce".passed
+And the user clicks the login button........................................passed
+Then the user should be displayed error message.............................passed
+Then close browser..........................................................passed
 ]]></system-out>
 </testcase>
 </testsuite>

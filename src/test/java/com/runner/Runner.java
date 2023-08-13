@@ -15,7 +15,7 @@ import net.masterthought.cucumber.ReportBuilder;
 @RunWith(Cucumber.class)
 @CucumberOptions(
 		
-		features="src\\main\\resources\\Features",
+		features="src\\main\\resources\\Features\\test.feature",
 		glue={"com.stepDefinition"},
 		monochrome=true,
 		plugin= {"html:test-output",
